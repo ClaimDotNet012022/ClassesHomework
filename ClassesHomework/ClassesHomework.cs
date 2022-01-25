@@ -5,16 +5,17 @@ namespace ClassesHomework
     [TestClass]
     public class ClassesHomework
     {
-        // READ ME 
+        //READ ME
         // You need to solve all of the homework questions below.
         // The goal of this homework is to get practice creating classes
-        // The Test Methods take you through the flow of creating a class and 
-        // then enhancing it over time. Your class will be build up over the questions.
-        // NOTHING WILL COMPILE BY DEFAULT. SO COMMENT OUT QUESTIONS AND SOLVE THEM ONE AT A TIME TOP
-        // TO BOTTOM
+        // The Test Methods take you through the flow of creating a class and
+        // then enhancing it over time.Your class will be build up over the questions.
+        //NOTHING WILL COMPILE BY DEFAULT. SO COMMENT OUT QUESTIONS AND SOLVE THEM ONE AT A TIME TOP
+        //TO BOTTOM
+
 
         [TestMethod]
-        public void BasicClassWithDefaultConstructor() 
+        public void BasicClassWithDefaultConstructor()
         {
             // Goal 1: Create a dog class in the Dog Class File provided in the project.
             // The class must have at least a default constructor that takes no parameters.
@@ -120,9 +121,9 @@ namespace ClassesHomework
             // Ill be grading this manually.
 
             Dog dog = new Dog();
-            //dog.Breed = "not able to set"; // This should not compile
-            //dog.IsSitting = false; // this should not compile
-            //dog.Age = 123; // this should not compile
+            dog.Breed = "not able to set"; // This should not compile
+            dog.IsSitting = false; // this should not compile
+            dog.Age = 123; // this should not compile
         }
 
         [TestMethod]
@@ -160,23 +161,24 @@ namespace ClassesHomework
         [TestMethod]
         public void PolyMorphism()
         {
-            // Goal 1: Creat a virtual method named Speak in the Animal base class. It takes no parameters.
-            // Goal 2: Make the base version of Animal return "What am I?"
-            // Goal 3: Override the virtual speak method to create a special version for Dogs that returns "woof!", this shoudl replace the Speak method in dogs.
-            // Goal 4: Override the virtual speak method to create a special version for Cats that returns "meow!"
-            // Goal 5: Move all shared properties that make sense from Dog to its base class animal, so that cat can now have all the features of a dog.
-            // Contraints: You are not allowed to change this code, edit types already created.
-            Animal unknown = new Animal();
-            Dog dog = new Dog();
-            Cat cat = new Cat();
-            Animal dogAsAnimal = dog;
-            Animal catAsAnimal = cat;
+                //Goal 1: Creat a virtual method named Speak in the Animal base class. It takes no parameters.
+                //Goal 2: Make the base version of Animal return "What am I?"
 
-            Assert.IsTrue(dog.Speak() == "woof!");
-            Assert.IsTrue(cat.Speak() == "meow!");
-            Assert.IsTrue(unknown.Speak() == "What am I?");
-            Assert.IsTrue(dogAsAnimal.Speak() == "woof!");
-            Assert.IsTrue(catAsAnimal.Speak() == "meow!");
+                //Goal 3: Override the virtual speak method to create a special version for Dogs that returns "woof!", this shoudl replace the Speak method in dogs.
+                //Goal 4: Override the virtual speak method to create a special version for Cats that returns "meow!"
+                //Goal 5: Move all shared properties that make sense from Dog to its base class animal, so that cat can now have all the features of a dog.
+                //Contraints: You are not allowed to change this code, edit types already created.
+                Animal unknown = new Animal();
+                Dog dog = new Dog();
+                Cat cat = new Cat();
+                Animal dogAsAnimal = dog;
+                Animal catAsAnimal = cat;
+
+                Assert.IsTrue(dog.Speak() == "woof!");
+                Assert.IsTrue(cat.Speak() == "meow!");
+                Assert.IsTrue(unknown.Speak() == "What am I?");
+                Assert.IsTrue(dogAsAnimal.Speak() == "woof!");
+                Assert.IsTrue(catAsAnimal.Speak() == "meow!");
 
         }
 
@@ -193,7 +195,7 @@ namespace ClassesHomework
             Assert.IsTrue(cat.IsSitting == false);
             Assert.IsTrue(cat.Age == 1);
             cat.CelebrateBirthday();
-            Assert.IsTrue(cat.Age == 2);            
+            Assert.IsTrue(cat.Age == 2);
         }
 
         [TestMethod]
@@ -229,9 +231,10 @@ namespace ClassesHomework
             // are within a specific range of each other (in this
             // case, less than 0.00001 apart), they're considered
             // equal, so rounding errors don't throw off the tests.
-            Assert.AreEqual(3.0, zoo.GetAverageAge(), 0.00001); 
+            Assert.AreEqual(3.0, zoo.GetAverageAge(), 0.00001);
 
 
         }
+
     }
 }
