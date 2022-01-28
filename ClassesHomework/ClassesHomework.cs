@@ -121,9 +121,9 @@ namespace ClassesHomework
             // Ill be grading this manually.
 
             Dog dog = new Dog();
-            dog.Breed = "not able to set"; // This should not compile
-            dog.IsSitting = false; // this should not compile
-            dog.Age = 123; // this should not compile
+            //dog.Breed = "not able to set"; // This should not compile
+            //dog.IsSitting = false; // this should not compile
+            //dog.Age = 123; // this should not compile
         }
 
         [TestMethod]

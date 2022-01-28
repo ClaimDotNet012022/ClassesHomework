@@ -10,9 +10,9 @@ namespace ClassesHomework
     class Dog : Animal
     {
         //properties/variables for the class
-        //public string  Breed     { get; set; }
-        //public int     Age       { get; set; }
-        //public bool    IsSitting { get; set; }
+        //public string Breed      { get; private set; }
+        //public int    Age        { get; private set; }
+        //public bool   IsSitting  { get; private set; }
 
 
         public Dog() //default constructor
