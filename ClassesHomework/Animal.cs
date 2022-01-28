@@ -10,9 +10,10 @@ namespace ClassesHomework
     class Animal
     {
         public string Species   { get; set; } = "unknown";
-        public string Breed     { get; set; }
-        public int    Age       { get; set; } = 1;
-        public bool   IsSitting { get; set; }
+        public string Breed     { get; protected set; }
+        public int    Age       { get; protected set; } = 1;
+        public bool   IsSitting { get; protected set; }
+        
 
         public Animal()
         {
