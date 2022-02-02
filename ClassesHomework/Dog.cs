@@ -9,14 +9,11 @@ namespace ClassesHomework
     // Write your dog class here.
     class Dog : Animal
     {
-        public Dog()
+        public Dog() : base()
         {
+            Age = 1;
             IsSitting = false;
-            Age = 0;
-            
         }
-
-        
 
         public Dog(string breed)
         {
@@ -28,30 +25,39 @@ namespace ClassesHomework
             Age = age;
         }
 
+        public Dog(bool isSitting)
+        {
+            IsSitting = isSitting;
+        }
+
         public Dog(string breed, int age)
         {
             Breed= breed;
             Age = age;
+           
         }
 
-        public string Speak()          
+        public string Speak()
         {
-            return "woof!";
+            string speakDog = "woof!";
+            return speakDog;
         }
 
-        public string Speak(string sayThis)      
+        public string Speak(string sayThis)
         {
-            return sayThis;    
+            return sayThis;
         }
 
         public bool Sit()
         {
-            return true;
+            return IsSitting = true;
+
         }
 
         public bool Stand()
         {
-            return false;
+
+            return IsSitting = false;
         }
 
         public int CelebrateBirthday()
