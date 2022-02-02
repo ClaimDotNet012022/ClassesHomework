@@ -11,7 +11,7 @@ namespace ClassesHomework
         // The Test Methods take you through the flow of creating a class and 
         // then enhancing it over time. Your class will be build up over the questions.
         // NOTHING WILL COMPILE BY DEFAULT. SO COMMENT OUT QUESTIONS AND SOLVE THEM ONE AT A TIME TOP
-        // TO BOTTOM
+        // TO BOTTOM 
 
         [TestMethod]
         public void BasicClassWithDefaultConstructor() 

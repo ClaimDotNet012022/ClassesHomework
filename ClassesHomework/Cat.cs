@@ -7,9 +7,17 @@ using System.Threading.Tasks;
 namespace ClassesHomework
 {
     // Write your Cat class here
-    //class Cat
-    //{
-        
-    //}
+    class Cat : Animal
+    {
+        public Cat()
+        {
+            Species = "cat";
+        }
+
+        public override string Speak()
+        {
+            return "meow!";
+        }
+    }
 
 }
