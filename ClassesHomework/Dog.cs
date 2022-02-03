@@ -9,60 +9,30 @@ namespace ClassesHomework
     // Write your dog class here.
     class Dog : Animal
     {
-        public Dog() : base()
+        public Dog()
         {
             Age = 1;
             IsSitting = false;
+            Species = "dog";
         }
-
         public Dog(string breed)
         {
             Breed = breed;
+            Age = 1;
         }
-
-        public Dog(int age)
-        {
-            Age = age;
-        }
-
-        public Dog(bool isSitting)
-        {
-            IsSitting = isSitting;
-        }
-
         public Dog(string breed, int age)
         {
-            Breed= breed;
+            Breed = breed;
             Age = age;
-           
         }
-
-        public string Speak()
+        public override string Speak()
         {
-            string speakDog = "woof!";
-            return speakDog;
+            return "woof!";
         }
-
-        public string Speak(string sayThis)
+        public string Speak(string toSpeak)
         {
-            return sayThis;
-        }
-
-        public bool Sit()
-        {
-            return IsSitting = true;
-
-        }
-
-        public bool Stand()
-        {
-
-            return IsSitting = false;
-        }
-
-        public int CelebrateBirthday()
-        {
-            return Age++;
+            string woof = toSpeak;
+            return woof;
         }
     }
 }
