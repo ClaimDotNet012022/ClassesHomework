@@ -177,7 +177,6 @@ namespace ClassesHomework
             Assert.IsTrue(unknown.Speak() == "What am I?");
             Assert.IsTrue(dogAsAnimal.Speak() == "woof!");
             Assert.IsTrue(catAsAnimal.Speak() == "meow!");
-
         }
 
         [TestMethod]
@@ -193,7 +192,7 @@ namespace ClassesHomework
             Assert.IsTrue(cat.IsSitting == false);
             Assert.IsTrue(cat.Age == 1);
             cat.CelebrateBirthday();
-            Assert.IsTrue(cat.Age == 2);            
+            Assert.IsTrue(cat.Age == 2);
         }
 
         [TestMethod]
@@ -229,9 +228,15 @@ namespace ClassesHomework
             // are within a specific range of each other (in this
             // case, less than 0.00001 apart), they're considered
             // equal, so rounding errors don't throw off the tests.
-            Assert.AreEqual(3.0, zoo.GetAverageAge(), 0.00001); 
+            Assert.AreEqual(3.0, zoo.GetAverageAge(), 0.00001);
 
+            //Elephant dumbo = new Elephant();
+            //dumbo.CelebrateBirthday();
+            //dumbo.Sit();
+            //dumbo.Stand();
+            //zoo.AddAnimal("Dumbo", dumbo);
 
+            //zoo.SpeakNOW();
         }
     }
 }
