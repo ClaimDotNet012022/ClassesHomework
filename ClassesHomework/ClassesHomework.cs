@@ -51,7 +51,7 @@ namespace ClassesHomework
         {
             // Goal 1: Extend your Dog class to additionally support another constructor overload that takes both breed and age.
             // Goal 2: Your dog class must set its properties Age and Breed with these values during construction.
-            // Contraints: You are not allowed to change this code, only extend the type you already created..
+            // Contraints: You are not allowed to change this code, only extend the type you already created.
             Dog luna = new Dog("chihuahua", 7);
             Assert.IsTrue(luna.Breed == "chihuahua");
             Assert.IsTrue(luna.Age == 7);
@@ -60,8 +60,10 @@ namespace ClassesHomework
         [TestMethod]
         public void SpeakMethod()
         {
-            // Goal 1: Extend your Dog class to support a method Named Speak(), which takes no arguments and returns "woof!" for dogs.
-            // Goal 2: Extend your Dog class to support a method Named Speak() overloaded to take argument, the message you want your dog to speak, and returns that message.
+            // Goal 1: Extend your Dog class to support a method Named Speak(), which takes no arguments
+            // and returns "woof!" for dogs.
+            // Goal 2: Extend your Dog class to support a method Named Speak() overloaded to take argument,
+            // the message you want your dog to speak, and returns that message.
             // Contraints: You are not allowed to change this code, only extend the type you already created.
             Dog airBud = new Dog("golden retriever", 2);
             Assert.IsTrue(airBud.Speak() == "woof!");
@@ -71,9 +73,12 @@ namespace ClassesHomework
         [TestMethod]
         public void SitMethod()
         {
-            // Goal 1: Extend your Dog class to support a property named IsSitting, that relays the status of the Dog and indicates whether its sitting or not.
+            // Goal 1: Extend your Dog class to support a property named IsSitting, that relays the status of the
+            // Dog and indicates whether its sitting or not.
             // IsSitting should start out as False for dogs whos Sit Method has not been called.
-            // Goal 2: Extend your Dog class to support a method Named Sit(), which takes no arguments, but internally changes the value IsSitting to True.
+
+            // Goal 2: Extend your Dog class to support a method Named Sit(), which takes no arguments, but internally
+            // changes the value IsSitting to True.
             // Contraints: You are not allowed to change this code, only extend the type you already created.
             Dog airBud = new Dog("golden retriever", 2);
             Assert.IsTrue(airBud.IsSitting == false);
@@ -84,8 +89,10 @@ namespace ClassesHomework
         [TestMethod]
         public void StandMethod()
         {
-            // Goal 1: Extend your Dog class to support a method Named Stand(), which takes no arguments, but internally changes the value that
-            // controls the property IsSitting. IsSitting should reflect if the dog is sitting or not, the methods Sit and Stand should control that.
+            // Goal 1: Extend your Dog class to support a method Named Stand(), which takes no arguments,
+            // but internally changes the value that
+            // controls the property IsSitting. IsSitting should reflect if the dog is sitting or not,
+            // the methods Sit and Stand should control that.
             // Contraints: You are not allowed to change this code, only extend the type you already created.
             Dog airBud = new Dog("golden retriever", 2);
             Assert.IsTrue(airBud.IsSitting == false);
@@ -98,7 +105,8 @@ namespace ClassesHomework
         [TestMethod]
         public void CelebrateBirthday()
         {
-            // Goal 1: Extend your Dog class to support a method Named CelebrateBirthday(), which takes no arguments, but interanally increases the age of the dog.
+            // Goal 1: Extend your Dog class to support a method Named CelebrateBirthday(), which takes no arguments,
+            // but interanally increases the age of the dog.
             // Contraints: You are not allowed to change this code, only extend the type you already created.
             Dog airBud = new Dog("golden retriever", 2);
             airBud.CelebrateBirthday();
@@ -111,9 +119,14 @@ namespace ClassesHomework
         [TestMethod]
         public void Encapsulation()
         {
-            // Goal 1: Ammend your Dog class so that the property Age cannot be set externally by users of the class. Age can only be set in the constructor or increased through CelebrateBirthday.
-            // Goal 2: Ammend your Dog class so that the property IsSitting cannot be set externally by users of the class. IsSitting can only be set in the constructor by calling Sit/Stand methods.
-            // Goal 3: Ammend your Dog class so that the property Breed cannot be set externally by users of the class. Breed can only be set in the constructor when a dog is created.
+            // Goal 1: Ammend your Dog class so that the property Age cannot be set externally by users of the class.
+            // Age can only be set in the constructor or increased through CelebrateBirthday.
+
+            // Goal 2: Ammend your Dog class so that the property IsSitting cannot be set externally by users of the class.
+            // IsSitting can only be set in the constructor by calling Sit/Stand methods.
+
+            // Goal 3: Ammend your Dog class so that the property Breed cannot be set externally by users of the class.
+            // Breed can only be set in the constructor when a dog is created.
 
             // Hint, you can make a property read only by removing its setter or privatizing it, depending on your design.
             // The goal of this is to remind you that controlling who can set your members is valueable.
@@ -160,10 +173,13 @@ namespace ClassesHomework
         [TestMethod]
         public void PolyMorphism()
         {
-            // Goal 1: Creat a virtual method named Speak in the Animal base class. It takes no parameters.
+            // Goal 1: Create a virtual method named Speak in the Animal base class. It takes no parameters.
             // Goal 2: Make the base version of Animal return "What am I?"
-            // Goal 3: Override the virtual speak method to create a special version for Dogs that returns "woof!", this shoudl replace the Speak method in dogs.
+            // Goal 3: Override the virtual speak method to create a special version for Dogs that returns "woof!",
+            // this should replace the Speak method in dogs.
+
             // Goal 4: Override the virtual speak method to create a special version for Cats that returns "meow!"
+
             // Goal 5: Move all shared properties that make sense from Dog to its base class animal, so that cat can now have all the features of a dog.
             // Contraints: You are not allowed to change this code, edit types already created.
             Animal unknown = new Animal();
@@ -183,7 +199,9 @@ namespace ClassesHomework
         [TestMethod]
         public void ReapingTheReward()
         {
-            // Goal 1: Move Sit(), Stand(), IsSitting, Age, and CelebrateBirthday from Dog to its base class animal, so that all animals can now sit, stand and have birthday parties.
+            // Goal 1: Move Sit(), Stand(), IsSitting, Age, and CelebrateBirthday from Dog to its base class animal,
+            // so that all animals can now sit, stand and have birthday parties.
+
             // Contraints: You are not allowed to change this code, edit types already created.
             Cat cat = new Cat();
             Assert.IsTrue(cat.IsSitting == false);
